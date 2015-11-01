@@ -55,11 +55,19 @@
 	fileprefix="tweets"
 	key=c("keyword1", "keyword2")
   
-  #definition number of tweets per file
-  number=3000
+  	#definition number of tweets per file
+ 	 number=3000
 
 	#running the function
-	tweet2r(start=start,end=end,ntweets=number,keywords=key,fileprefix = fileprefix)
+	tweet2r(start=start,end=end,ntweets=number,keywords=key,fileprefix = fileprefix
+		requestURL,accessURL,authURL,consumerKey,consumerSecret)
+
+	#running the function using bbox
+	#set up a bbox
+	bbox=(-0.1644,39.8485,0.6916,40.0034)
+
+	tweet2r(start=start,end=end,ntweets=number,bbox=bbox,fileprefix = fileprefix
+		requestURL,accessURL,authURL,consumerKey,consumerSecret)
 	}
 }
 

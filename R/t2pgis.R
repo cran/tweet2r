@@ -1,3 +1,5 @@
+#' @export
+#' @import RPostgreSQL rgdal
 t2pgis<-function(fileprefix, con){
   #loading required packagies
 #    library(RPostgreSQL)

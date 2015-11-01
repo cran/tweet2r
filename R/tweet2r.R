@@ -1,3 +1,5 @@
+#' @export
+#' @import ROAuth streamR
 tweet2r<-function(start,end, ntweets=NULL,keywords=NULL, bbox=NULL, fileprefix, 
                   consumerKey,consumerSecret,requestURL,accessURL,authURL){
  

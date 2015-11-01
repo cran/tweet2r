@@ -12,4 +12,5 @@
 \seealso{
   \link{streamR}, \code{\link{tweet2r}},
   \code{\link{t2pgis}}
+
 }
