@@ -22,25 +22,23 @@
    \item{bbox}{Vector with the bounding box coordinates from which you want to retrieve tweets. You will retrieve geotagged tweets as well as tweets from users that has in his profile this area as a residence \url{https://dev.twitter.com/streaming/overview/request-parameters}}
 
  \item{fileprefix}{Filprefix for the JSON file where the tweets will be stored. Avoid number at the begging this will be confusing for SQL database}
- \item{consumerKey}{Twitter API conumer key url{https://dev.twitter.com/oauth}}
- \item{consumerSecret}{Twitter API conumer secret url{https://dev.twitter.com/oauth}}
+ \item{consumerKey}{Twitter API consumer key url{https://dev.twitter.com/oauth}}
+ \item{consumerSecret}{Twitter API consumer secret url{https://dev.twitter.com/oauth}}
  \item{requestURL}{Twitter API url to request data{https://dev.twitter.com}}
  \item{accessURL}{Twitter API url to access{https://dev.twitter.com}}
  \item{authURL}{Twitter API authentification url{https://dev.twitter.com}} 
 
 }
 
-\note{It is mandatory to configure the connection to the tweeter API. The procedure is well described in \link{streamR} package}
+\note{There is a API configuration by default, therefore it is not mandatory to configure a tweeter API's connection. Nevertheless this default connection could be overload sometimes or a user could prefer to use its own connection. The procedure is well described in \link{streamR} package}
 
 
 \examples{
 
 \dontrun{
 
-	library(ROAuth)
-    library(streamR)
-
 	#Configuration fo twitter API connection
+  #this could be avoid and use the defoult configuration 
 	requestURL <- "https://api.twitter.com/oauth/request_token"
 	accessURL <- "https://api.twitter.com/oauth/access_token"
 	authURL <- "https://api.twitter.com/oauth/authorize"
@@ -72,7 +70,7 @@
 }
 
 \author{
-  Pau Aragó \email{parago@uji.es}
+  Pau Aragó Galindo \email{parago@uji.es}
 }
 
 \seealso{

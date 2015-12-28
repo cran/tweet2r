@@ -1,17 +1,17 @@
 \name{t2pgis}
 \alias{t2pgis}
-\title{ Set up parameters to JSON parsing andexport it to a postGIS database.}
+\title{ Set up parameters to JSON parsing and export it to a postGIS database.}
 
-\description{This function parse the JSON files (as is definedn in \link{streamR} package). Once is parsed export it to a database formas the timestamp column and creats to tables one with all the tweets and other only with geotagged tweets.}
+\description{This function parse the JSON files (as is defined in \link{streamR} package). Once is parsed export it to a database format the timestamp column and creates to tables one with all the tweets and other only with geotagged tweets.}
 
 \usage{
   t2pgis(fileprefix, con)
 }
 
 \arguments{
-  \item{fileprefix}{setup file prefix for JSON files. If tweets have been retrieven with the \code{\link{tweet2r}} function it should be the same. Te file prefix is used to create the table name and the geotagged table with will be "geofileprefix"}
+  \item{fileprefix}{Setup file prefix for JSON files. If tweets have been retrieved with the \code{\link{tweet2r}} function it should be the same. Te file        prefix is used to create the table name and the geotagged table which  has geo as a prefix (example "geofileprefix")}
 
-  \item{con}{postGIS connection parameters. For mor information look at RPostgreSQL}
+  \item{con}{postGIS connection parameters. For more information look at RPostgreSQL}
 
 
 }
@@ -35,10 +35,10 @@ t2pgis(fileprefix, connection)
 }
 
 \author{
-  Pau Aragó \email{parago@uji.es}
+  Pau Aragó Galindo \email{parago@uji.es}
 }
 
 \seealso{
-  RPostgreSQL, \link{streamR}
+  \code{RPostgreSQL}, \code{\link{streamR}}
 }
 

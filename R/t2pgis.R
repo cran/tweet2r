@@ -1,5 +1,6 @@
 #' @export
 #' @import RPostgreSQL rgdal
+
 t2pgis<-function(fileprefix, con){
   #loading required packagies
 #    library(RPostgreSQL)
@@ -52,7 +53,7 @@ t2pgis<-function(fileprefix, con){
   #close connection with postgres
   postgresqlCloseConnection(con)
   
-  return(message("tweets importate to postGIS"))
+  return(message("tweets exported to postGIS"))
 }
 
 

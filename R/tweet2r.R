@@ -1,7 +1,12 @@
 #' @export
 #' @import ROAuth streamR
+
 tweet2r<-function(start,end, ntweets=NULL,keywords=NULL, bbox=NULL, fileprefix, 
-                  consumerKey,consumerSecret,requestURL,accessURL,authURL){
+                  consumerKey="rXu02gEtPnzH81cxDRKUnhNia",
+                  consumerSecret="0Ean4ymoxmB4OWt9a6RgNP0Kap0CbRL1lFBO7QPDiGoP5v8d8j",
+                  requestURL="https://api.twitter.com/oauth/request_token",
+                  accessURL="https://api.twitter.com/oauth/access_token",
+                  authURL="https://api.twitter.com/oauth/authorize"){
  
 
    #load requiret packages
