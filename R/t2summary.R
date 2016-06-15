@@ -51,7 +51,7 @@ t2summary<-function(tweets, geotweets){
   #set column names
   colnames(cweekday)<-c("day", "tweets")
   
-  #plot tweets per weeday using ggplot
+  #plot tweets per weekday using ggplot
   gweekday<-ggplot(cweekday ,aes(day,tweets))
   gweekday <-gweekday +geom_bar(stat="identity",fill="deepSkyblue2",colour = "deepSkyblue1")
   
