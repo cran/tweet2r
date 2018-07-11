@@ -21,7 +21,7 @@
 
    \item{bbox}{Vector with the bounding box coordinates from which you want to retrieve tweets. You will retrieve geotagged tweets as well as tweets from users that has in his profile this area as a residence \url{https://dev.twitter.com/streaming/overview/request-parameters}}
 
- \item{fileprefix}{Filprefix for the JSON file where the tweets will be stored. Avoid number at the begging this will be confusing for SQL database}
+ \item{fileprefix}{Fileprefix for the JSON file where the tweets will be stored. Avoid number at the begging this will be confusing for SQL database}
  \item{consumerKey}{Twitter API consumer key \url{https://dev.twitter.com/oauth}}
  \item{consumerSecret}{Twitter API consumer secret \url{https://dev.twitter.com/oauth}}
  \item{requestURL}{Twitter API url to request data \url{https://dev.twitter.com}}
@@ -38,7 +38,7 @@
 \dontrun{
 
 	#Configuration fo twitter API connection
-  #this could be avoid and use the defoult configuration 
+  #this could be avoid and use the default configuration 
 	requestURL <- "https://api.twitter.com/oauth/request_token"
 	accessURL <- "https://api.twitter.com/oauth/access_token"
 	authURL <- "https://api.twitter.com/oauth/authorize"
@@ -57,14 +57,14 @@
  	 number=3000
 
 	#running the function
-	tweet2r(t_start=t_start,t_end=t_end,ntweets=number,keywords=key,fileprefix = fileprefix
+	tweet2r(t_start=t_start,t_end=t_end,ntweets=number,keywords=key,fileprefix = fileprefix,
 		requestURL,accessURL,authURL,consumerKey,consumerSecret)
 
 	#running the function using bbox
 	#set up a bbox
 	bbox=c(-0.1644,39.8485,0.6916,40.0034)
 
-	tweet2r(start=start,end=end,ntweets=number,bbox=bbox,fileprefix = fileprefix
+	tweet2r(t_start=t_start,t_end=t_end,ntweets=number,bbox=bbox,fileprefix = fileprefix,
 		requestURL,accessURL,authURL,consumerKey,consumerSecret)
 	}
 }

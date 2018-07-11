@@ -15,7 +15,7 @@
 
 	* src/t2gis: bug error
 
-2016-06-14 19:00  parago
+2016-06-13 19:00  parago
         
 	* src/t2STIDF: new function
 	* src/tglm: new function
@@ -24,3 +24,10 @@
 	* src/t2SpatialPointDataFrame: new function
 	* src/t2DataFrame: new function
 	* src/t2subset: new function
+
+2018-07-10 15:00 jeroen
+
+  *R/t2DataFrame: added some arguments
+  *R/t2qgis: added some arguments
+  *R/t2sqlite: added some arguments
+  *R/valjson: added some arguments
